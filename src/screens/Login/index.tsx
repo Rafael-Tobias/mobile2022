@@ -1,29 +1,36 @@
 import React from "react";
 import { View, Text, KeyboardAvoidingView, TextInput } from "react-native";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
+import Button from "../../components/Button";
 
 export default function Login() {
-    return (
+  async function handleSignIn() {
+    console.log("Login");
+  }
+
+  return (
+    <View>
+      <KeyboardAvoidingView>
+        <Text>Login</Text>
         <View>
-            <KeyboardAvoidingView>
-                <Text>Login</Text>
-                <View>
-                    <MaterialIcons name="email" size={24} color="black" />
-                    <TextInput
-                        placeholder="Email"
-                        keyboardType="email-address"
-                        autoCapitalize="none"
-                    />
-                </View>
-                <View>
-                    <Entypo name="key" size={24} color="black" />
-                    <TextInput
-                        placeholder="Senha"
-                        secureTextEntry={true}
-                        autoCapitalize="none"
-                    />
-                </View>
-            </KeyboardAvoidingView>
+          <MaterialIcons name="email" size={24} color="black" />
+          <TextInput
+            placeholder="Email"
+            keyboardType="email-address"
+            autoCapitalize="none"
+          />
         </View>
-    );
+        <View>
+          <Entypo name="key" size={24} color="black" />
+          <TextInput
+            placeholder="Senha"
+            secureTextEntry={true}
+            autoCapitalize="none"
+          />
+        </View>
+        <Button title="Login" type="green" onPress={handleSignIn} />
+        <Button title="Cadastre-se" type="purple" onPress={handleSignIn} />
+      </KeyboardAvoidingView>
+    </View>
+  );
 }
