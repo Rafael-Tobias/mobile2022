@@ -1,10 +1,9 @@
 import React from "react";
-<<<<<<< HEAD
 import {
   View,
   Text,
-  KeyboardAvoidingView,
   TextInput,
+  KeyboardAvoidingView,
   ImageBackground,
 } from "react-native";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
@@ -32,7 +31,7 @@ export default function Login({ navigation }: LoginTypes) {
             <MaterialIcons name="email" style={styles.icon} />
             <TextInput
               style={styles.input}
-              placeholder="Email"
+              placeholder="E-mail"
               keyboardType="email-address"
               autoCapitalize="none"
             />
@@ -50,40 +49,6 @@ export default function Login({ navigation }: LoginTypes) {
           <Button title="Cadastre-se" type="purple" onPress={handleCadastrar} />
         </KeyboardAvoidingView>
       </ImageBackground>
-=======
-import { View, Text, KeyboardAvoidingView, TextInput } from "react-native";
-import { MaterialIcons, Entypo } from "@expo/vector-icons";
-import Button from "../../components/Button";
-
-export default function Login() {
-  async function handleSignIn() {
-    console.log("Login");
-  }
-
-  return (
-    <View>
-      <KeyboardAvoidingView>
-        <Text>Login</Text>
-        <View>
-          <MaterialIcons name="email" size={24} color="black" />
-          <TextInput
-            placeholder="Email"
-            keyboardType="email-address"
-            autoCapitalize="none"
-          />
-        </View>
-        <View>
-          <Entypo name="key" size={24} color="black" />
-          <TextInput
-            placeholder="Senha"
-            secureTextEntry={true}
-            autoCapitalize="none"
-          />
-        </View>
-        <Button title="Login" type="green" onPress={handleSignIn} />
-        <Button title="Cadastre-se" type="purple" onPress={handleSignIn} />
-      </KeyboardAvoidingView>
->>>>>>> df6bd920540815a35e0d099300471c1accc27e91
     </View>
   );
 }

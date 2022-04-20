@@ -1,12 +1,7 @@
 {
   "expo": {
-<<<<<<< HEAD
-    "name": "projeto",
-    "slug": "projeto",
-=======
-    "name": "ProjetoRafael",
-    "slug": "ProjetoRafael",
->>>>>>> df6bd920540815a35e0d099300471c1accc27e91
+    "name": "projeto02",
+    "slug": "projeto02",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import colors from "../../styles/colors";
+import { StyleSheet } from 'react-native'
+import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
   buttonGreen: {
@@ -19,11 +19,11 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
-    fontWeight: "bold",
-    textAlign: "center",
+    fontWeight: 'bold',
+    textAlign: 'center',
     padding: 10,
     fontSize: 18
   }
-});
+})
 
-export default styles;
+export default styles
