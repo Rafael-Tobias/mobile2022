@@ -2,20 +2,21 @@ import { StyleSheet } from 'react-native'
 import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
-  buttonGreen: {
-    backgroundColor: colors.green,
+  buttonprimary: {
+    backgroundColor: colors.primary,
     borderRadius: 5,
     margin: 10
   },
-  buttonPurple: {
-    backgroundColor: colors.purple,
+  buttonSecondary: {
+    backgroundColor: colors.secondary,
     borderRadius: 5,
     margin: 10
   },
-  buttonOrange: {
-    backgroundColor: colors.orange,
+  buttonThird: {
+    backgroundColor: colors.third,
     borderRadius: 5,
-    margin: 10
+    margin: 10,
+    width: '90%'
   },
   text: {
     color: colors.white,

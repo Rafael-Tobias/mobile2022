@@ -13,7 +13,7 @@ import { LoginTypes } from "../../types/Screen.types";
 
 export default function Login({ navigation }: LoginTypes) {
   async function handleSignIn() {
-    console.log("Login");
+    navigation.navigate("Tab");
   }
   function handleCadastrar() {
     navigation.navigate("Cadastrar");
@@ -45,8 +45,12 @@ export default function Login({ navigation }: LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Login" type="green" onPress={handleSignIn} />
-          <Button title="Cadastre-se" type="purple" onPress={handleCadastrar} />
+          <Button title="Login" type="primary" onPress={handleSignIn} />
+          <Button
+            title="Cadastre-se"
+            type="secondary"
+            onPress={handleCadastrar}
+          />
         </KeyboardAvoidingView>
       </ImageBackground>
     </View>
